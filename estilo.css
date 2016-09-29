@@ -2,15 +2,16 @@ body{
 	background:url(imagens/background.jpg); /*inserção da imagem de fundo em todo o site*/
 	color:#868686; /*cor padrão para todas as fontes*/
 	font-family: "Open Sans", Helvetica, sans-serif, arial; /*definição da fonte geral incorporada do Google Fonts*/
-	font-size: 18px; /*tamanho da fonte*/
+	font-size: 1.125em; /*tamanho da fonte 18px/16px=1.125em*/
 	font-weight: 300; /*indica que a fonte está configurada como Open Sans Light*/
-	line-height: 22px;/*altura da linha*/
+	line-height: 1.22em;/*altura da linha, foi dividido por 18, pq a propriedade esta ligada ao body*/
 	text-align: left; /*alinhando o texto à esquerda*/
 	text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
 }
 .center{
 	margin: 0 auto; /*centralizando o conteúdo no navegador*/
-	width: 1200px; /*largura do layout*/		
+	max-width: 1200px;
+	width: 90%; /*largura do layout*/		
 }
 /*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
   evitando que os floats se aglomerem.
@@ -31,16 +32,16 @@ img, picture, video, embed {
 }
 h1, h2{
 	color:#FE9380;
-	font-size: 60px;
+	font-size: 3.75em;
 	font-weight: 800;
 	letter-spacing: -3px; /*espaçamento entre as letras*/
-	line-height: 60px;
+	line-height: 3.33em;
 }
 h3{
-	font-size: 32px;
+	font-size: 2em;
 	font-weight: 300;
 	letter-spacing: -2px; /*espaçamento entre as letras*/
-	line-height: 38px;
+	line-height: 2.11em;
 }
 p{
 	font-weight: 300;/*modifica a força da fonte para light*/
@@ -60,7 +61,7 @@ a:hover{
 header{
 	border-bottom: 1px solid #E0E0E0; /*borda na base da seção*/
 	height:150px;
-	width:1200px; /*largura do topo*/
+	max-width:100%; /*largura do topo*//*1200px ÷ 1200px = 1 x 100 = 100%*/
 }
 /*
 =========================
@@ -73,7 +74,7 @@ header h1 a{
 		float:left; /*posiciona o logotipo à esquerda do site*/
 		height:139px; /*altura da imagem*/
 		text-indent:-9999; /*recuo para ocultar texto à esquerda*/
-		width:302px; /*largura da imagem*/
+		max-width:25.16%; /*largura da imagem*//* 302px ÷ 1200px = 0.251666666666665 x 100 = 25.166666666666665%*/
 	}
 	
 /*
@@ -86,7 +87,7 @@ nav{
 	float:right; /*posiciona menu à direita*/
 	margin-top:78px; /*distância do menu à margem superior do navegador*/
 	text-align:right; /*alinha os links à direita*/
-	width:520px;
+	max-width:43.3%;
 }
 nav ul{
 	list-style-type:none; /*retira os marcadores da lista*/
@@ -102,10 +103,10 @@ nav ul{
 		}
 nav a:link, nav a:visited{
 	color:#999;
-	font-size: 22px;
+	font-size: 1.375em;
 	font-weight: 300;
 	letter-spacing: -2px; /*espaçamento entre as letras*/
-	line-height: 26px;
+	line-height: 1.44em;
 	display:inline-block;
 }
 nav a.ativo, nav a:hover{
@@ -119,17 +120,17 @@ Seção .CHAMADA ========================================
 .chamada{
 	height:290px;
 	text-align:center;
-	width:1200px;
+	max-width:100%;
 }
 	h2 span{
-		font-size: 60px;
+		font-size: 3.75em;
 		font-weight: 300;
 		letter-spacing: -2px;
-		line-height: 60px;
+		line-height: 3.33em;
 	}
 	.chamada h3 {
 		margin: 0 auto;
-		width:900px;
+		max-width:75%;
 	}
 	
 /*----------------------------------------------------------
@@ -139,13 +140,13 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 	background-color:#FE9481;
 	height: 417px;
 	padding:30px;
-	max-width:1200px;
+	max-width:100%;
 }
 .desktop, .tablet, .mobile{
 	float:left;
 	position:relative;
 	text-align:center;
-	width:360px;
+	max-width:30%;
 }
 .desktop, .tablet{
 	margin-right: 30px;
@@ -164,7 +165,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 /*imagens*/
 .container .desktop figure, .container .tablet figure, .container .mobile figure {
 	margin: 15px auto 0px auto; 
-	width: 250px;
+	max-width: 20.8%;
 }
 
 /*
@@ -174,7 +175,7 @@ formatação do texto
 */
 .container h3{
 	color:#fff;
-	font-size: 32px;
+	font-size: 2em;
 	font-weight: 300;
 	letter-spacing: -2px;
 	margin-bottom: 30px;
@@ -186,7 +187,7 @@ formatação do texto
 	height:160px;
 	padding:7px;
 	position:absolute;
-	width-max:360px;
+	max-width:30%;
 	text-align:justify;
 	top:225px;
 }
@@ -197,7 +198,7 @@ formatação do botão
 =========================
 */
 span.btn{
-	font-size: 20px;
+	font-size: 1.25em;
 	font-weight: 400;
 	letter-spacing: -2px;
 	height:27px;
@@ -206,7 +207,7 @@ span.btn{
 	right: 1px;
 	text-align:center;
 	text-shadow:none;
-	width:120px;
+	max-width:10%;
 }
 span.btn a{
 	color:#fff;
@@ -229,7 +230,7 @@ footer{
 	clear:both;
 	height: 50px;
 	padding: 10px 0px;
-	width:1200px;
+	max-width:100%;
 }
 .copyright{
 	float:left;
@@ -672,4 +673,311 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+}
+
+/* 
+1200px – Desktops, notebooks com monitores widescreen
+***********************************************************/
+@media screen and (max-width:1200px){
+	.chamada h3 {
+		font-size: 1.6em;
+	}
+	.container h3{
+		font-size: 1.5em;
+	}
+	.container p{
+		height: 170px;
+		top:217px;
+	}
+}
+/* 
+960px – Tablets no formato paisagem e alguns monitores mais antigos
+***********************************************************/
+@media screen and (max-width:960px){
+	header h1 a{
+		width:37.5%;
+	}
+	nav{
+		width:62.5%;
+	}
+	h2{
+		font-size:2.6em;
+	}
+/*.chamada*/
+	.chamada {
+		height: 250px;
+	}
+		.chamada h3{
+			font-size:1.5em;
+			width:88.54%;
+		}
+/*.container*/
+	.container{
+		height: 425px;
+		padding:3.125%;
+		width:93.75%;
+	}
+		.desktop, .tablet, .mobile{
+			width:31.45%;
+		}
+		.container .desktop figure, .container .tablet figure, .container .mobile figure {
+			width:66.22%;
+		}
+			.container img{
+					height:100px;
+				}
+		.container h3{
+			font-size: 1.66em;
+		}
+		.container p{
+			font-size: 0.83em;
+			top: 230px;
+		}
+}
+/* 
+768px – Tablets no formato retrato, como o iPad
+***********************************************************/
+@media screen and (max-width:768px){
+/*cores dos links e H2*/
+	h2, a, a:link, a:visited{
+	color:#FBCA61; 
+}
+	a:hover{
+		color:#F9AD0F;
+}
+/*header*/	
+	header {
+		height:195px;
+		text-align:center;
+	}
+		header h1 a{
+			background-position: 57% 0;
+			height: 126px;
+			margin-bottom: 15px;
+			width: 100%;
+		}
+		nav{
+			float:none;
+			text-align:center;
+			width: 100%;
+		}
+			nav a.ativo:link, nav a:hover{
+				color:#FBCA61; 
+			}
+/*.chamada*/
+	.chamada{
+		height:200px;
+	}
+		h2 {
+			font-size: 2.2em;
+		}
+		.chamada h3{
+			font-size:1.1em;
+		}
+/*.container*/
+	.container{
+		background-color:#FCDA92;
+		height: 380px;
+		padding:3.9%;
+		width:92.19%;
+	}
+		.desktop, .tablet, .mobile{
+			width:31.25%;
+		}
+		.container .desktop figure, .container .tablet figure, .container .mobile figure {
+			width:62.25%;
+		}
+			.container img{
+					height:80px;
+				}
+		.container h3{
+			font-size: 1.6em;
+		}
+		.container p{
+			font-size: 0.7em;
+			height:140px;
+			line-height: 1.1em;
+			padding: 2.9%;
+			top: 215px;
+		}
+			span.btn{
+				font-size: 1.1em;
+				letter-spacing: -0.1em;
+				height:22px;
+				margin-top: 20px;
+				position:absolute;
+				width:50%;
+			}
+			span.btn a{
+				padding: 2px 3.3%;
+			}
+}
+/* 
+480px – Smartphones no formato paisagem com tela pequena
+***********************************************************/
+@media screen and (max-width:480px){
+	/*Geral*/
+*{
+	margin:0;
+	padding:0;
+}
+.center{
+	width:100%;
+}
+/*cores dos links e H2*/
+h2, a, a:link, a:visited{
+	color:#9C8CB9; 
+}
+a:hover{
+		color:#745F9A;
+}
+/*header*/	
+header {
+	border-bottom: none;
+	height:auto;
+	text-align:center;
+}
+	header h1 a{
+		background-position: 50% 0;
+		display:inherit;
+		height: 126px;
+		width: 100%;
+	}
+/*menu nav*/
+nav{
+	clear:both;
+}
+	nav li {
+		background-color: #9C8CB9;
+		display:block;
+	}
+		nav ul li a{
+			height: 40px;
+			margin: 0 auto;
+			padding-top:3px;
+			text-align:center;
+			text-shadow:none;
+			width: 100%;
+		}
+		nav li a:link{
+			color:#fff;
+			font-size:1.38em;
+		}
+		nav li a.ativo:link, nav li a:hover, nav li a:visited {
+			background-color:#745F9A; 
+			color:#fff;
+			text-decoration:none;
+		}
+		nav li a.ativo:hover, nav li a.ativo:visited{
+			 background-color: #9C8CB9;
+		}
+/*.chamada*/
+.chamada{
+	height:130px;
+	margin-top:25px;
+}
+	h2 {
+		font-size: 1.4em;
+		letter-spacing:-0.07em;
+		margin-bottom: 15px;
+	}
+	.chamada h3{
+		font-size:0.7em;
+	}
+/*.container*/
+.container{	
+	background-color:#9C8CB9;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+	.container .desktop, .container .tablet, .container .mobile{
+		float:none;
+		height:160px;
+		width:100%;
+	}
+	.container .desktop figure, .container .tablet figure, .container .mobile figure{
+		float:left;
+		height:160px;
+		margin:0;
+		padding:0;
+		width: 53.125%;
+	}
+	.container h3{
+		float:left;
+		margin-top: 40px;
+		width: 46.875%;
+	}	
+		.container .desktop figure img, .container .tablet figure img, .container .mobile figure img{
+			height:125px;
+			margin-top:15px;
+			width:86.27%;
+		}
+	.container p{
+		display:none;
+	}
+/*footer*/
+	.copyright, .desenvolvedor{
+		float:none;
+		margin: 0;
+		padding: 0;
+		text-align:center;
+	}
+	.desenvolvedor figure{
+		width:inherit;
+	}
+}
+/* 
+320px – Smartphones no formato retrato com tela pequena
+***********************************************************/
+@media screen and (max-width:320px){
+	/*cores dos links e H2*/
+h2, a, a:link, a:visited{
+	color:#79E1D5; 
+}
+a:hover{
+		color:#2FD0BC;
+}
+/*menu nav*/
+	nav li {
+		background-color: #79E1D5;
+	}
+		nav li a:link{
+		color:#555;
+		}
+		nav li a.ativo:link, nav li a:hover, nav li a:visited {
+			background-color:#2FD0BC; 
+			color:#fff;
+		}
+		nav li a.ativo:hover, nav li a.ativo:visited{
+			 background-color: #2FD0BC;
+		}
+/*.chamada*/
+.chamada{
+	height:130px;
+	margin-top:20px;
+}
+	h2 {
+		font-size: 1.1em;
+		margin-bottom: 15px;
+	}
+	.chamada h3{
+		font-size:0.7em;
+	}
+/*.container*/
+	.container .desktop, .container .tablet, .container .mobile{
+		float:none;
+		height:160px;
+		max-width:100%;
+	}
+	.container .desktop figure, .container .tablet figure, .container .mobile figure{
+		float:left;
+		max-width: 100%;
+	}
+	.container h3{
+		display:none;
+	}	
+	.container p{
+		display:none;
+	}
 }
