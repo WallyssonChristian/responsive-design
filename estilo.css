@@ -61,7 +61,7 @@ a:hover{
 header{
 	border-bottom: 1px solid #E0E0E0; /*borda na base da seção*/
 	height:150px;
-	max-width:100%; /*largura do topo*//*1200px ÷ 1200px = 1 x 100 = 100%*/
+	width:100%; /*largura do topo*//*1200px ÷ 1200px = 1 x 100 = 100%*/
 }
 /*
 =========================
@@ -74,7 +74,7 @@ header h1 a{
 		float:left; /*posiciona o logotipo à esquerda do site*/
 		height:139px; /*altura da imagem*/
 		text-indent:-9999; /*recuo para ocultar texto à esquerda*/
-		max-width:58.333333333333%; /*largura da imagem*//* 302px ÷ 1200px = 0.251666666666665 x 100 = 25.166666666666665%*/
+		width:58.333333333333%; /*largura da imagem*//* 302px ÷ 1200px = 0.251666666666665 x 100 = 25.166666666666665%*/
 	}
 	
 /*
@@ -87,7 +87,7 @@ nav{
 	float:right; /*posiciona menu à direita*/
 	margin-top:78px; /*distância do menu à margem superior do navegador*/
 	text-align:right; /*alinha os links à direita*/
-	max-width:41.6666666666667%;
+	width:41.6666666666667%;
 }
 nav ul{
 	list-style-type:none; /*retira os marcadores da lista*/
@@ -98,9 +98,9 @@ nav ul{
 		nav ul li a{
 			margin-right: 2.5%; /*espaço à direita de cada link do menu*/
 		}
-		nav ul li:nth-child(5) a{
-			margin-right:0px; /*indica que o 5º elemento da lista (contato) terá a margem direita zerada*/
-		}
+		/*nav ul li:nth-child(5) a{
+			margin-right:0px;
+		}*/
 nav a:link, nav a:visited{
 	color:#999;
 	font-size: 1.2222222222em;
@@ -120,7 +120,7 @@ Seção .CHAMADA ========================================
 .chamada{
 	height:290px;
 	text-align:center;
-	max-width:100%;
+	width:100%;
 }
 	h2 span{
 		font-size: 1em;
@@ -130,7 +130,7 @@ Seção .CHAMADA ========================================
 	}
 	.chamada h3 {
 		margin: 0 auto;
-		max-width:75%;
+		width:75%;
 	}
 	
 /*----------------------------------------------------------
@@ -140,13 +140,13 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 	background-color:#FE9481;
 	height: 417px;
 	padding:2.5%;
-	max-width:95%;
+	width:95%;
 }
 .desktop, .tablet, .mobile{
 	float:left;
 	position:relative;
 	text-align:center;
-	max-width:31.57894736842105%;
+	width:31.57894736842105%;
 }
 .desktop, .tablet{
 	margin-right: 2.631578947368421%;
@@ -165,7 +165,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 /*imagens*/
 .container .desktop figure, .container .tablet figure, .container .mobile figure {
 	margin: 15px auto 0px auto; 
-	max-width: 69.44444444444444%;
+	width: 69.44444444444444%;
 }
 
 /*
@@ -230,7 +230,7 @@ footer{
 	clear:both;
 	height: 50px;
 	padding: 10px 0px;
-	max-width:100%;
+	width:100%;
 }
 .copyright{
 	float:left;
@@ -239,7 +239,9 @@ footer{
 .desenvolvedor{
 	float:right;
 }
-
+.desenvolvedor figure{
+	width:100%;
+}
 
 /*----------------------------------------------------------
 Media Queries <<<<<=========================================
@@ -611,6 +613,7 @@ canvas,
 progress,
 video {
   display: inline-block;
+  vertical-align:baseline;
 }
 
 /**
@@ -626,9 +629,9 @@ audio:not([controls]) {
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
-progress {
+/*progress {
   vertical-align: baseline;
-}
+}*/
 
 /**
  * Add the correct display in IE 10-.
@@ -672,7 +675,7 @@ a:hover {
  */
 
 abbr[title] {
-  border-bottom: none; /* 1 */
+  border-bottom: 1px dotted; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
