@@ -4,7 +4,7 @@ body{
 	font-family: "Open Sans", Helvetica, sans-serif, arial; /*definição da fonte geral incorporada do Google Fonts*/
 	font-size: 1.125em; /*tamanho da fonte 18px/16px=1.125em*/
 	font-weight: 300; /*indica que a fonte está configurada como Open Sans Light*/
-	line-height: 1.22em;/*altura da linha, foi dividido por 18, pq a propriedade esta ligada ao body*/
+	line-height: 1.2222222222em;/*altura da linha, foi dividido por 18, pq a propriedade esta ligada ao body*/
 	text-align: left; /*alinhando o texto à esquerda*/
 	text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
 }
@@ -32,20 +32,20 @@ img, picture, video, embed {
 }
 h1, h2{
 	color:#FE9380;
-	font-size: 3.75em;
+	font-size: 3.3333333333em;
 	font-weight: 800;
-	letter-spacing: -3px; /*espaçamento entre as letras*/
-	line-height: 3.33em;
+	letter-spacing: -0.05em; /*espaçamento entre as letras*/
+	line-height: 1em;
 }
 h3{
-	font-size: 2em;
+	font-size: 1.7777777778em;
 	font-weight: 300;
-	letter-spacing: -2px; /*espaçamento entre as letras*/
-	line-height: 2.11em;
+	letter-spacing: -0.0625em; /*espaçamento entre as letras*/
+	line-height: 1.1875em;
 }
 p{
 	font-weight: 300;/*modifica a força da fonte para light*/
-	letter-spacing: -1px; /*espaçamento entre as letras*/
+	letter-spacing: -0.05555555556em; /*espaçamento entre as letras*/
 }
 a, a:link, a:visited{
 	color:#FE9380; /*cor dos links*/
@@ -74,7 +74,7 @@ header h1 a{
 		float:left; /*posiciona o logotipo à esquerda do site*/
 		height:139px; /*altura da imagem*/
 		text-indent:-9999; /*recuo para ocultar texto à esquerda*/
-		max-width:25.16%; /*largura da imagem*//* 302px ÷ 1200px = 0.251666666666665 x 100 = 25.166666666666665%*/
+		max-width:58.333333333333%; /*largura da imagem*//* 302px ÷ 1200px = 0.251666666666665 x 100 = 25.166666666666665%*/
 	}
 	
 /*
@@ -87,7 +87,7 @@ nav{
 	float:right; /*posiciona menu à direita*/
 	margin-top:78px; /*distância do menu à margem superior do navegador*/
 	text-align:right; /*alinha os links à direita*/
-	max-width:43.3%;
+	max-width:41.6666666666667%;
 }
 nav ul{
 	list-style-type:none; /*retira os marcadores da lista*/
@@ -96,17 +96,17 @@ nav ul{
 		display: inline; /*deixa o menu na horizontal*/
 	}
 		nav ul li a{
-			margin-right: 30px; /*espaço à direita de cada link do menu*/
+			margin-right: 2.5%; /*espaço à direita de cada link do menu*/
 		}
 		nav ul li:nth-child(5) a{
 			margin-right:0px; /*indica que o 5º elemento da lista (contato) terá a margem direita zerada*/
 		}
 nav a:link, nav a:visited{
 	color:#999;
-	font-size: 1.375em;
+	font-size: 1.2222222222em;
 	font-weight: 300;
-	letter-spacing: -2px; /*espaçamento entre as letras*/
-	line-height: 1.44em;
+	letter-spacing: -0.0909090909em; /*espaçamento entre as letras*/
+	line-height: 1.18181818182em;
 	display:inline-block;
 }
 nav a.ativo, nav a:hover{
@@ -123,10 +123,10 @@ Seção .CHAMADA ========================================
 	max-width:100%;
 }
 	h2 span{
-		font-size: 3.75em;
+		font-size: 1em;
 		font-weight: 300;
-		letter-spacing: -2px;
-		line-height: 3.33em;
+		letter-spacing: -0.0333333333em;
+		line-height: 1em;
 	}
 	.chamada h3 {
 		margin: 0 auto;
@@ -139,17 +139,17 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 .container{
 	background-color:#FE9481;
 	height: 417px;
-	padding:30px;
-	max-width:100%;
+	padding:2.5%;
+	max-width:95%;
 }
 .desktop, .tablet, .mobile{
 	float:left;
 	position:relative;
 	text-align:center;
-	max-width:30%;
+	max-width:31.57894736842105%;
 }
 .desktop, .tablet{
-	margin-right: 30px;
+	margin-right: 2.631578947368421%;
 }
 .mobile{
 	background-color:#9C8CB9;
@@ -165,7 +165,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 /*imagens*/
 .container .desktop figure, .container .tablet figure, .container .mobile figure {
 	margin: 15px auto 0px auto; 
-	max-width: 20.8%;
+	max-width: 69.44444444444444%;
 }
 
 /*
@@ -175,9 +175,9 @@ formatação do texto
 */
 .container h3{
 	color:#fff;
-	font-size: 2em;
+	font-size: 1.77777777778em;
 	font-weight: 300;
-	letter-spacing: -2px;
+	letter-spacing: -0.0625em;
 	margin-bottom: 30px;
 	text-shadow:none;
 }
@@ -185,9 +185,9 @@ formatação do texto
 	background-color:#fff;
 	float:left;
 	height:160px;
-	padding:7px;
+	padding:1.9444444444444445%;
 	position:absolute;
-	max-width:30%;
+	max-width:100%;
 	text-align:justify;
 	top:225px;
 }
@@ -198,20 +198,20 @@ formatação do botão
 =========================
 */
 span.btn{
-	font-size: 1.25em;
+	font-size: 1.1111111111em;
 	font-weight: 400;
-	letter-spacing: -2px;
+	letter-spacing: -0.1em;
 	height:27px;
 	margin-top: 30px;
 	position:absolute;
 	right: 1px;
 	text-align:center;
 	text-shadow:none;
-	max-width:10%;
+	width:33.33333333333333%;
 }
 span.btn a{
 	color:#fff;
-	padding: 2px 4px;
+	padding: 2px 3.333333333333333%;
 }
 .desktop span.btn a{
 	background-color:#FE9481;
@@ -234,7 +234,7 @@ footer{
 }
 .copyright{
 	float:left;
-	margin-left:30px;
+	margin-left:2.5%;
 }
 .desenvolvedor{
 	float:right;
@@ -245,10 +245,312 @@ footer{
 Media Queries <<<<<=========================================
 ----------------------------------------------------------*/
 
-
-
-
-
+/* 
+1200px – Desktops, notebooks com monitores widescreen
+***********************************************************/
+@media screen and (max-width:1200px){
+	.chamada h3 {
+		font-size: 1.66666666667em;
+	}
+	.container h3{
+		font-size: 1.55555555556em;
+	}
+	.container p{
+		height: 170px;
+		top:217px;
+	}
+}
+/* 
+960px – Tablets no formato paisagem e alguns monitores mais antigos
+***********************************************************/
+@media screen and (max-width:960px){
+	header h1 a{
+		width:37.5%;
+	}
+	nav{
+		width:62.5%;
+	}
+	h2{
+		font-size:2.6666666667em;
+	}
+/*.chamada*/
+	.chamada {
+		height: 250px;
+	}
+		.chamada h3{
+			font-size:1.5em;
+			width:88.54166666666667%;
+		}
+/*.container*/
+	.container{
+		height: 425px;
+		padding:3.125%;
+		width:93.75%;
+	}
+		.desktop, .tablet, .mobile{
+			width:31.45833333333333%%;
+		}
+		.container .desktop figure, .container .tablet figure, .container .mobile figure {
+			width:66.22516556291391%;
+		}
+			.container img{
+					height:100px;
+				}
+		.container h3{
+			font-size: 1.6666666667em;
+		}
+		.container p{
+			font-size: 0.8333333333em;
+			top: 230px;
+		}
+}
+/* 
+768px – Tablets no formato retrato, como o iPad
+***********************************************************/
+@media screen and (max-width:768px){
+/*cores dos links e H2*/
+	h2, a, a:link, a:visited{
+	color:#FBCA61; 
+}
+	a:hover{
+		color:#F9AD0F;
+}
+/*header*/	
+	header {
+		height:195px;
+		text-align:center;
+	}
+		header h1 a{
+			background-position: 57% 0;
+			height: 126px;
+			margin-bottom: 15px;
+			width: 100%;
+		}
+		nav{
+			float:none;
+			text-align:center;
+			width: 100%;
+		}
+			nav a.ativo:link, nav a:hover{
+				color:#FBCA61; 
+			}
+/*.chamada*/
+	.chamada{
+		height:200px;
+	}
+		h2 {
+			font-size:2.2222222222em;
+		}
+		.chamada h3{
+			font-size:1.1111111111em;
+		}
+/*.container*/
+	.container{
+		background-color:#FCDA92;
+		height: 380px;
+		padding:3.90625%;
+		width:92.1875%;
+	}
+		.desktop, .tablet, .mobile{
+			width:31.25%;
+		}
+		.container .desktop figure, .container .tablet figure, .container .mobile figure {
+			width:62.25%;
+		}
+			.container img{
+					height:80px;
+				}
+		.container h3{
+			font-size: 1.6666666667em;
+		}
+		.container p{
+			font-size: 0.7777777778em;
+			height:140px;
+			line-height: 1.1428571428em;
+			padding: 2.9166666667%;
+			top: 215px;
+		}
+			span.btn{
+				font-size: 1.1111111111em;
+				letter-spacing: -0.1em;
+				height:22px;
+				margin-top: 20px;
+				position:absolute;
+				width:50%;
+			}
+			span.btn a{
+				padding: 2px 3.333333333333333%;
+			}
+}
+/* 
+480px – Smartphones no formato paisagem com tela pequena
+***********************************************************/
+@media screen and (max-width:480px){
+	/*Geral*/
+*{
+	margin:0;
+	padding:0;
+}
+.center{
+	width:100%;
+}
+/*cores dos links e H2*/
+h2, a, a:link, a:visited{
+	color:#9C8CB9; 
+}
+a:hover{
+		color:#745F9A;
+}
+/*header*/	
+header {
+	border-bottom: none;
+	height:auto;
+	text-align:center;
+}
+	header h1 a{
+		background-position: 50% 0;
+		display:inherit;
+		height: 126px;
+		width: 100%;
+	}
+/*menu nav*/
+nav{
+	clear:both;
+}
+	nav li {
+		background-color: #9C8CB9;
+		display:block;
+	}
+		nav ul li a{
+			height: 40px;
+			margin: 0 auto;
+			padding-top:3px;
+			text-align:center;
+			text-shadow:none;
+			width: 100%;
+		}
+		nav li a:link{
+			color:#fff;
+			font-size:1.3888888889em;
+		}
+		nav li a.ativo:link, nav li a:hover, nav li a:visited {
+			background-color:#745F9A; 
+			color:#fff;
+			text-decoration:none;
+		}
+		nav li a.ativo:hover, nav li a.ativo:visited{
+			 background-color: #9C8CB9;
+		}
+/*.chamada*/
+.chamada{
+	height:130px;
+	margin-top:20px;
+}
+	h2 {
+		font-size: 1.4444444444em;
+		letter-spacing: -0.0769230769230769em;
+		margin-bottom: 15px;
+	}
+	.chamada h3{
+		font-size:0.7777777778em;
+	}
+/*.container*/
+.container{	
+	background-color:#9C8CB9;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+	.container .desktop, .container .tablet, .container .mobile{
+		float:none;
+		height:160px;
+		width:100%;
+	}
+	.container .desktop figure, .container .tablet figure, .container .mobile figure{
+		float:left;
+		height:160px;
+		margin:0;
+		padding:0;
+		width: 53.125%;
+	}
+	.container h3{
+		float:left;
+		margin-top: 40px;
+		width: 46.875%;
+	}	
+		.container .desktop figure img, .container .tablet figure img, .container .mobile figure img{
+			height:125px;
+			margin-top:15px;
+			width:86.2745098040%;
+		}
+	.container p{
+		display:none;
+	}
+/*footer*/
+	.copyright, .desenvolvedor{
+		float:none;
+		margin: 0;
+		padding: 0;
+		text-align:center;
+	}
+	.desenvolvedor figure{
+		width:inherit;
+	}
+}
+/* 
+320px – Smartphones no formato retrato com tela pequena
+***********************************************************/
+@media screen and (max-width:320px){
+	/*cores dos links e H2*/
+h2, a, a:link, a:visited{
+	color:#79E1D5; 
+}
+a:hover{
+		color:#2FD0BC;
+}
+/*menu nav*/
+	nav li {
+		background-color: #79E1D5;
+	}
+		nav li a:link{
+		color:#555;
+		}
+		nav li a.ativo:link, nav li a:hover, nav li a:visited {
+			background-color:#2FD0BC; 
+			color:#fff;
+		}
+		nav li a.ativo:hover, nav li a.ativo:visited{
+			 background-color: #2FD0BC;
+		}
+/*.chamada*/
+.chamada{
+	height:130px;
+	margin-top:20px;
+}
+	h2 {
+		font-size: 1.1111111111em;
+		margin-bottom: 15px;
+	}
+	.chamada h3{
+		font-size:0.7777777778em;
+	}
+/*.container*/
+	.container .desktop, .container .tablet, .container .mobile{
+		float:none;
+		height:160px;
+		max-width:100%;
+	}
+	.container .desktop figure, .container .tablet figure, .container .mobile figure{
+		float:left;
+		max-width: 100%;
+	}
+	.container h3{
+		display:none;
+	}	
+	.container p{
+		display:none;
+	}
+}
 
 
 /*----------------------------------------------------------
@@ -673,311 +975,4 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
-}
-
-/* 
-1200px – Desktops, notebooks com monitores widescreen
-***********************************************************/
-@media screen and (max-width:1200px){
-	.chamada h3 {
-		font-size: 1.6em;
-	}
-	.container h3{
-		font-size: 1.5em;
-	}
-	.container p{
-		height: 170px;
-		top:217px;
-	}
-}
-/* 
-960px – Tablets no formato paisagem e alguns monitores mais antigos
-***********************************************************/
-@media screen and (max-width:960px){
-	header h1 a{
-		width:37.5%;
-	}
-	nav{
-		width:62.5%;
-	}
-	h2{
-		font-size:2.6em;
-	}
-/*.chamada*/
-	.chamada {
-		height: 250px;
-	}
-		.chamada h3{
-			font-size:1.5em;
-			width:88.54%;
-		}
-/*.container*/
-	.container{
-		height: 425px;
-		padding:3.125%;
-		width:93.75%;
-	}
-		.desktop, .tablet, .mobile{
-			width:31.45%;
-		}
-		.container .desktop figure, .container .tablet figure, .container .mobile figure {
-			width:66.22%;
-		}
-			.container img{
-					height:100px;
-				}
-		.container h3{
-			font-size: 1.66em;
-		}
-		.container p{
-			font-size: 0.83em;
-			top: 230px;
-		}
-}
-/* 
-768px – Tablets no formato retrato, como o iPad
-***********************************************************/
-@media screen and (max-width:768px){
-/*cores dos links e H2*/
-	h2, a, a:link, a:visited{
-	color:#FBCA61; 
-}
-	a:hover{
-		color:#F9AD0F;
-}
-/*header*/	
-	header {
-		height:195px;
-		text-align:center;
-	}
-		header h1 a{
-			background-position: 57% 0;
-			height: 126px;
-			margin-bottom: 15px;
-			width: 100%;
-		}
-		nav{
-			float:none;
-			text-align:center;
-			width: 100%;
-		}
-			nav a.ativo:link, nav a:hover{
-				color:#FBCA61; 
-			}
-/*.chamada*/
-	.chamada{
-		height:200px;
-	}
-		h2 {
-			font-size: 2.2em;
-		}
-		.chamada h3{
-			font-size:1.1em;
-		}
-/*.container*/
-	.container{
-		background-color:#FCDA92;
-		height: 380px;
-		padding:3.9%;
-		width:92.19%;
-	}
-		.desktop, .tablet, .mobile{
-			width:31.25%;
-		}
-		.container .desktop figure, .container .tablet figure, .container .mobile figure {
-			width:62.25%;
-		}
-			.container img{
-					height:80px;
-				}
-		.container h3{
-			font-size: 1.6em;
-		}
-		.container p{
-			font-size: 0.7em;
-			height:140px;
-			line-height: 1.1em;
-			padding: 2.9%;
-			top: 215px;
-		}
-			span.btn{
-				font-size: 1.1em;
-				letter-spacing: -0.1em;
-				height:22px;
-				margin-top: 20px;
-				position:absolute;
-				width:50%;
-			}
-			span.btn a{
-				padding: 2px 3.3%;
-			}
-}
-/* 
-480px – Smartphones no formato paisagem com tela pequena
-***********************************************************/
-@media screen and (max-width:480px){
-	/*Geral*/
-*{
-	margin:0;
-	padding:0;
-}
-.center{
-	width:100%;
-}
-/*cores dos links e H2*/
-h2, a, a:link, a:visited{
-	color:#9C8CB9; 
-}
-a:hover{
-		color:#745F9A;
-}
-/*header*/	
-header {
-	border-bottom: none;
-	height:auto;
-	text-align:center;
-}
-	header h1 a{
-		background-position: 50% 0;
-		display:inherit;
-		height: 126px;
-		width: 100%;
-	}
-/*menu nav*/
-nav{
-	clear:both;
-}
-	nav li {
-		background-color: #9C8CB9;
-		display:block;
-	}
-		nav ul li a{
-			height: 40px;
-			margin: 0 auto;
-			padding-top:3px;
-			text-align:center;
-			text-shadow:none;
-			width: 100%;
-		}
-		nav li a:link{
-			color:#fff;
-			font-size:1.38em;
-		}
-		nav li a.ativo:link, nav li a:hover, nav li a:visited {
-			background-color:#745F9A; 
-			color:#fff;
-			text-decoration:none;
-		}
-		nav li a.ativo:hover, nav li a.ativo:visited{
-			 background-color: #9C8CB9;
-		}
-/*.chamada*/
-.chamada{
-	height:130px;
-	margin-top:25px;
-}
-	h2 {
-		font-size: 1.4em;
-		letter-spacing:-0.07em;
-		margin-bottom: 15px;
-	}
-	.chamada h3{
-		font-size:0.7em;
-	}
-/*.container*/
-.container{	
-	background-color:#9C8CB9;
-	margin:0;
-	padding:0;
-	width:100%;
-}
-	.container .desktop, .container .tablet, .container .mobile{
-		float:none;
-		height:160px;
-		width:100%;
-	}
-	.container .desktop figure, .container .tablet figure, .container .mobile figure{
-		float:left;
-		height:160px;
-		margin:0;
-		padding:0;
-		width: 53.125%;
-	}
-	.container h3{
-		float:left;
-		margin-top: 40px;
-		width: 46.875%;
-	}	
-		.container .desktop figure img, .container .tablet figure img, .container .mobile figure img{
-			height:125px;
-			margin-top:15px;
-			width:86.27%;
-		}
-	.container p{
-		display:none;
-	}
-/*footer*/
-	.copyright, .desenvolvedor{
-		float:none;
-		margin: 0;
-		padding: 0;
-		text-align:center;
-	}
-	.desenvolvedor figure{
-		width:inherit;
-	}
-}
-/* 
-320px – Smartphones no formato retrato com tela pequena
-***********************************************************/
-@media screen and (max-width:320px){
-	/*cores dos links e H2*/
-h2, a, a:link, a:visited{
-	color:#79E1D5; 
-}
-a:hover{
-		color:#2FD0BC;
-}
-/*menu nav*/
-	nav li {
-		background-color: #79E1D5;
-	}
-		nav li a:link{
-		color:#555;
-		}
-		nav li a.ativo:link, nav li a:hover, nav li a:visited {
-			background-color:#2FD0BC; 
-			color:#fff;
-		}
-		nav li a.ativo:hover, nav li a.ativo:visited{
-			 background-color: #2FD0BC;
-		}
-/*.chamada*/
-.chamada{
-	height:130px;
-	margin-top:20px;
-}
-	h2 {
-		font-size: 1.1em;
-		margin-bottom: 15px;
-	}
-	.chamada h3{
-		font-size:0.7em;
-	}
-/*.container*/
-	.container .desktop, .container .tablet, .container .mobile{
-		float:none;
-		height:160px;
-		max-width:100%;
-	}
-	.container .desktop figure, .container .tablet figure, .container .mobile figure{
-		float:left;
-		max-width: 100%;
-	}
-	.container h3{
-		display:none;
-	}	
-	.container p{
-		display:none;
-	}
 }
